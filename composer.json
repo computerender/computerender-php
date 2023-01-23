@@ -1,0 +1,30 @@
+{
+  "name": "lukeholder/computerrender-php",
+  "description": "PHP client for the computerender API",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Lukeholder\\Computerrender\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Luke Holder",
+      "email": "lukemh@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.5"
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.22",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
