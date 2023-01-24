@@ -9,7 +9,7 @@ An easy to use image generation API
 ```php
 $prompt = "hipster cats";
 
-$client = new \Lukeholder\Computerrender\Client("<YOUR-API-KEY>");
+$client = new Computerrender\Client("<YOUR-API-KEY>");
 $image = $client->generate([
     'prompt' => $prompt,
 ]);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Lukeholder\Computerrender;
+namespace Computerrender;
 
 use GuzzleHttp\Psr7\Utils;
 

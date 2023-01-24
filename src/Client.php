@@ -1,6 +1,6 @@
 <?php
 
-namespace Lukeholder\Computerrender;
+namespace Computerrender;
 
 use Psr\Http\Client\ClientInterface as HttpClientInterface;
 use GuzzleHttp\Client as GuzzleClient;

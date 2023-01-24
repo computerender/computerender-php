@@ -1,11 +1,11 @@
 {
-  "name": "lukeholder/computerrender-php",
+  "name": "computerrender/computerrender-php",
   "description": "PHP client for the computerender API",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Lukeholder\\Computerrender\\": "src/"
+      "Computerrender\\": "src/"
     }
   },
   "authors": [

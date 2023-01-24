@@ -1,6 +1,6 @@
 <?php
 
-use Lukeholder\Computerrender\Client;
+use Computerrender\Client;
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
