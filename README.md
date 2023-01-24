@@ -2,8 +2,8 @@
 
 An easy to use image generation API
 
-### Install (coming soon):
-```composer require x/computerrender-php```
+### Install:
+```composer require computerrender/computerrender-php```
 
 ### Usage:
 ```php
