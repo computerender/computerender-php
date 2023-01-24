@@ -1,5 +1,9 @@
 # Release Notes for Computerender API PHP Client
 
+## 1.0.2 - 2023-01-24
+
+- Fixed authorization header
+
 ## 1.0.1 - 2023-01-24
 
 - Fixed namespace and package naming issues
