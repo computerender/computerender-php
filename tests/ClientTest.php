@@ -1,8 +1,9 @@
 <?php
 
 use Computerender\Client;
+use Dotenv\Dotenv;
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
 it('instantiates', function () {
@@ -46,5 +47,20 @@ it('should generate an image2image', function () {
     $result = file_put_contents(__DIR__ . '/hipster-cat-pink.jpg', $image);
     expect($result)->toBeTruthy();
     $file = __DIR__ . '/hipster-cat-pink.jpg';
+    expect($file)->toBeFile();
+});
+
+it('should generate a 128x128 image to disk', function () {
+    $apiKey = $_ENV['CR_KEY'];
+    $client = new Client($apiKey);
+    $params = [
+        'prompt' => 'Hipster Cat',
+        'w' => 128,
+        'h' => 128,
+    ];
+    $image = $client->generate($params);
+    $result = file_put_contents(__DIR__ . '/hipster-cat-small.jpg', $image);
+    expect($result)->toBeTruthy();
+    $file = __DIR__ . '/hipster-cat.jpg';
     expect($file)->toBeFile();
 });

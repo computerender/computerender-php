@@ -41,7 +41,7 @@ class Client
         $response = $this->httpClient->request('POST', 'generate', [
             'multipart' => $params->asMultipartArray(),
             'headers' => [
-                "X-API-Key" => $this->apiKey,
+                "Authorization" => 'X-API-Key '.$this->apiKey,
             ]
         ]);
 
