@@ -1,11 +1,11 @@
 {
-  "name": "computerrender/computerrender-php",
+  "name": "computerender/computerender-php",
   "description": "PHP client for the computerender API",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Computerrender\\": "src/"
+      "Computerender\\": "src/"
     }
   },
   "authors": [
