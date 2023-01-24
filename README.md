@@ -3,13 +3,13 @@
 An easy to use image generation API
 
 ### Install:
-```composer require computerrender/computerrender-php```
+```composer require computerender/computerender-php```
 
 ### Usage:
 ```php
 $prompt = "hipster cats";
 
-$client = new Computerrender\Client("<YOUR-API-KEY>");
+$client = new Computerender\Client("<YOUR-API-KEY>");
 $image = $client->generate([
     'prompt' => $prompt,
 ]);
